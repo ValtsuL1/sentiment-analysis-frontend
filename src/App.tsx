@@ -3,8 +3,6 @@ import './App.css'
 
 function App() {
 
-  const [text, setText] = useState("")
-
   const [result, setResult] = useState("")
 
   const [resultColor, setResultColor] = useState("")
@@ -55,7 +53,7 @@ function App() {
           <label style={{fontSize: "2em"}}>
             Write sentence below:
           </label>
-          <textarea onChange={(e) => setText(e.target.value)}/>
+          <textarea/>
           <input 
             type='submit'
             value="Submit"
