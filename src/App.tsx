@@ -5,7 +5,7 @@ function App() {
   function doAnalysis() {
     console.log("test")
   }
-
+  // deploy test
   return (
     <div>
       <h1>Sentiment analysis</h1>
