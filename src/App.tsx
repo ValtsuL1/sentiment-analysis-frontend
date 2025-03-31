@@ -48,7 +48,7 @@ function App() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     console.log("submitting...")
-    fetch('http://127.0.0.1:5000/sentiment', {
+    fetch('https://sentiment-analysis-backend-git-cloud-computing-course.2.rahtiapp.fi/sentiment', {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
