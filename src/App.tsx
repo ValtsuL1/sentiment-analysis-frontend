@@ -96,20 +96,19 @@ function App() {
   return (
     <div>
       <h1>Sentiment analysis</h1>
-      <div>
-        <form
-          onSubmit={handleSubmit}
-          style={{
-            display: "flex",
-            flexFlow: "column"
-          }}>
+      <div
+      style={{
+        display: "flex",
+        flexFlow: "column wrap"
+      }}>
+        <form onSubmit={handleSubmit}>
           <label style={{fontSize: "2em"}}>
             Write sentence below:
             <input 
             type='text'
             value={text}
             onChange={(e) => setText(e.target.value)}
-            style={{fontSize: "1.6em"}}/>
+            style={{fontSize: "1.6em", width: '100%'}}/>
           </label>
           <input type="submit"/>
         </form>
